@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Github finder App</title>
-  <link rel="stylesheet" href="
-  .css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div class="container">
     <header>
-      <h1></h1>
-        <i class="fas fa-github"></i>GitHub User Finder
+      <h1>
+        <i class="fab fa-github"></i>GitHub User Finder
       </h1>
       <p>search for any Github user to see their profile and repositories</p>
     </header>
@@ -29,17 +28,17 @@
       <div class="profile-header">
         <img src="" alt="profile avatar" id="avatar">
         <div class="profile-info">
-          <h2 id="name"></h2>
-          <p id="username"></p>
-          <p id="bio"></p>
+          <h2 id="name">Olekwa</h2>
+          <p id="username">@olekwa</p>
+          <p id="bio">Formerly As a Programmer</p>
           <div class="location-date">
             <p>
               <i class="fas fa-map-marker-alt"></i>
               <span id="location">Not specified</span>
             </p>
             <p>
-              <i class="far fa-map-calender-alt"></i>
-              Joined
+              <i class="far fa-calendar-alt"></i>
+              Joined 
               <span id="joined-date"></span>
             </p>
           </div>
@@ -50,20 +49,16 @@
       </div>
       <div class="stats">
         <div class="stat">
-          <i class="fas fa-user"></i>
+          <i class="fas fa-users"></i>
           <span id="followers"></span> followers
         </div>
         <div class="stat">
-          <div class="stat">
-            <i class="fas fa-user-friends"></i>
-            <span id="following"></span> following
-          </div>
+          <i class="fas fa-user-friends"></i>
+          <span id="following"></span> following
         </div>
         <div class="stat">
-          <div class="stat">
-            <i class="fas fa-code-branch"></i>
-            <span id="repositories"></span> repositories
-          </div>
+          <i class="fas fa-code-branch"></i>
+          <span id="repositories"></span> repositories
         </div>
       </div>
 
@@ -77,14 +72,14 @@
             <i class="fas fa-link"></i>
             <a id="blog" target="_blank">No website</a>
         </div>
-        <div class="info-item" id="x-container">
+        <div class="info-item" id="twitter-container">
           <i class="fab fa-x"></i>
-          <a id="x" target="_blank">No Twitter</a>
+          <a id="twitter" target="_blank">No Twitter</a>
         </div>
       </div>
 
-      <div class="repo-section">
-        <h3>Latest repositories</h3>
+      <div class="repos-section">
+        <h3>Latest Repositories</h3>
         <div id="repos-container" class="repos-container">
           <!-- repos will be dynamically added by Js -->
            <div class="loading-repos">Loading repositories...</div> 
@@ -97,5 +92,8 @@
       <p>No user found. Please try another username.</p>
     </div>
   </div>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
